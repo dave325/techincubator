@@ -46,7 +46,6 @@ services:
     networks:
       - nginxproxy_default
   nginx:
-    container_name: nginx-wordpress
     image: nginx:latest
     ports:
       - '80'
