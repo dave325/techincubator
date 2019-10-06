@@ -5,7 +5,7 @@ services:
     image: mariadb
     restart: always
     volumes:
-      - db_data:/var/lib/mysql/
+      - tech_incubator_db_data:/var/lib/mysql/
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_PASSWORD: password
@@ -40,5 +40,5 @@ services:
       PMA_HOST: database
       MYSQL_ROOT_PASSWORD: password 
 volumes:
-  db_data:
+  tech_incubator_db_data:
   wordpress_data:
